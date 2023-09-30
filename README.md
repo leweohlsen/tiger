@@ -13,19 +13,19 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 
 Let's have 4 participants: Alice, Bob, Charlie, and David.
 
-Alice is in tier 5
-Bob is in tier 3
-Charlie is in tier 1
-David is in tier 0
+- Alice is in tier 5
+- Bob is in tier 3
+- Charlie is in tier 1
+- David is in tier 0
 
 Let's assume the following percentage contributions for each tier:
 
-Tier 5 contributes 25%
-Tier 4 contributes 20%
-Tier 3 contributes 15%
-Tier 2 contributes 10%
-Tier 1 contributes 5%
-Tier 0 contributes 0%
+- Tier 5 contributes 25%
+- Tier 4 contributes 20%
+- Tier 3 contributes 15%
+- Tier 2 contributes 10%
+- Tier 1 contributes 5%
+- Tier 0 contributes 0%
 
 Now, let's say they have a bill of $100 to split.
 
@@ -33,10 +33,10 @@ First, we calculate the total contribution percentage from all participants whic
 
 Next, we calculate each person's share:
 
-Alice's Share: (25 / 45) * 100 = $55.56
-Bob's Share: (15 / 45) * 100 = $33.33
-Charlie's Share: (5 / 45) * 100 = $11.11
-David's Share: (0 / 45) * 100 = $0.00
+- Alice's Share: (25 / 45) * 100 = $55.56
+- Bob's Share: (15 / 45) * 100 = $33.33
+- Charlie's Share: (5 / 45) * 100 = $11.11
+- David's Share: (0 / 45) * 100 = $0.00
 
 This way, the expense gets divided according to the tiers of each participant. Please note that these are just suggested percentages for each tier. You can adjust them according to your requirements.
 
