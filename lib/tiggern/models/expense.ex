@@ -1,5 +1,6 @@
 defmodule Tiggern.Expense do
   use Ecto.Schema
+  import Ecto.Changeset
 
   alias Tiggern.Repo
   alias Tiggern.Person
@@ -12,6 +13,13 @@ defmodule Tiggern.Expense do
     belongs_to :person, Tiggern.Person, foreign_key: :created_by
 
     timestamps()
+  end
+
+  def changeset(expense, attrs) do
+    expense
+    |> cast(attrs, [:description, :amount, :is_covered, :created_by])
+    |> validate_required([:description, :amount, :created_by])
+    |> assoc_constraint(:person)
   end
 
   def calculate_split(expense) do

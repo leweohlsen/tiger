@@ -34,4 +34,6 @@ defmodule Tiggern.ExpenseTest do
     david_share = Enum.find(result, fn %{name: n} -> n == "David" end).share
     assert_in_delta david_share, 0.00, @delta
   end
+
+  # TODO: test case where sum of un-scaled percentages is above 100%
 end

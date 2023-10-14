@@ -6,7 +6,7 @@ defmodule TiggernWeb.Router do
     plug :fetch_session
     plug :fetch_live_flash
     plug :put_root_layout, html: {TiggernWeb.Layouts, :root}
-    plug :protect_from_forgery
+    # plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
 
@@ -16,6 +16,9 @@ defmodule TiggernWeb.Router do
 
   scope "/", TiggernWeb do
     pipe_through :browser
+
+    resources "/persons", PersonController, only: [:index, :create]
+    resources "/expenses", ExpenseController, only: [:index, :create]
 
     get "/", PageController, :home
   end
